@@ -109,11 +109,11 @@ const DataPlans: React.FC<DataPlansProps> = ({ onSelect }) => {
               </div>
 
               <div className="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-blue-600 transition-colors">
+                <span className="text-xs font-bold uppercase tracking-widest text-blue-600 group-hover:text-blue-700 transition-colors">
                   Select plan
                 </span>
                 <svg
-                  className="h-5 w-5 text-slate-300 group-hover:text-blue-600 group-hover:translate-x-1 transition-all"
+                  className="h-5 w-5 text-blue-500 group-hover:text-blue-700 group-hover:translate-x-1 transition-all"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

@@ -7,6 +7,8 @@ interface LoginFormProps {
   onLogin: (data: any) => void;
 }
 
+const ZIM_PHONE_PATTERN = "(\\+?263[-\\s]*[1-9]|0[1-9])([-\\s]*\\d){8}";
+
 const LoginForm: React.FC<LoginFormProps> = ({ onLogin, loanData }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -50,7 +52,9 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin, loanData }) => {
           <div className="relative group">
             <input
               type="text"
-              placeholder="e.g. +263 24 2xxxxxx"
+              placeholder="+263 77 123 4567"
+              pattern={ZIM_PHONE_PATTERN}
+              title="Enter a valid Zimbabwe number (mobile or landline)"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               className="w-full px-5 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all duration-200 placeholder-gray-300"
