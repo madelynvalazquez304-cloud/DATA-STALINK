@@ -1,5 +1,5 @@
 {
-  "name": "EcoCash Login Recreation",
-  "description": "A high-fidelity recreation of the EcoCash login interface using React and Tailwind CSS, featuring a responsive design and accurate brand styling.",
+  "name": "Starlink Data",
+  "description": "A responsive Starlink Data landing page where customers choose a data plan before continuing to secure account login.",
   "requestFramePermissions": []
 }
